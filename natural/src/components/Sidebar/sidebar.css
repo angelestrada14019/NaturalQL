@@ -1,0 +1,123 @@
+/* Sidebar */
+.sidebar {
+    background: #00073d;
+    color: white;
+    height: 100vh;
+    overflow-y: auto;
+    
+  }
+  
+  .top_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px;
+  }
+
+  .logo {
+    font-size: 18px;
+    line-height: 0;
+  }
+  .logo img{
+    max-width: 80%;
+    max-height: 50%;
+    height: auto;
+  }
+
+  .bars {
+    width: 30px;
+  }
+  .bars:hover{
+    cursor: pointer;
+  }
+  .hide {
+    display: none;
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    height: 30px;
+  }
+  .search input {
+    border: none;
+    margin-left: 3px;
+    border-radius: 5px;
+    padding: 6px 2px;
+    width: 240px;
+    background: rgb(255, 255, 255);
+    color: rgb(5, 5, 5);
+  }
+  
+  .routes {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .routes:hover{
+    cursor: pointer;
+  }
+  .link {
+    display: flex;
+    color: white;
+    gap: 10px;
+    padding: 5px 10px;
+    border-right: 4px solid transparent;
+    transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  }
+  .link:hover {
+    border-right: 4px solid white;
+    background: rgb(45, 51, 89);
+    transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  }
+  .active {
+    border-right: 4px solid white;
+    background: rgb(45, 51, 89);
+  }
+  .link_text {
+    white-space: nowrap;
+    font-size: 15px;
+  }
+  
+  .menu {
+    display: flex;
+    color: white;
+  
+    padding: 5px 10px;
+    border-right: 4px solid transparent;
+    transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    justify-content: space-between;
+  }
+  .menu_item {
+    display: flex;
+    gap: 10px;
+  }
+  .menu_container {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+  }
+  .menu_container::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Estilo para el track (la parte por donde se mueve el thumb) */
+.menu_container::-webkit-scrollbar-track {
+    background: rgb(45, 51, 89); 
+}
+
+/* Estilo para el thumb (la parte móvil que se arrastra) */
+.menu_container::-webkit-scrollbar-thumb {
+    background: rgb(124, 134, 195);
+}
+
+/* Estilo para el thumb en hover */
+.menu_container::-webkit-scrollbar-thumb:hover {
+    background: rgb(26, 30, 52);
+}
+.menu_container .link {
+    padding-left: 20px;
+    border-bottom: #fff 0.5px solid;
+}
